@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login Form</title>
     <style>
         *{
             margin:0;
@@ -13,13 +13,11 @@
             background-color: #BA55D3;
         }
         .box{
-            position:relative;
+            position: fixed;
+            top:50%;
+            left:50%;
+            transform: translate(-50%,-50%);
             background-color: #663399;
-            width:320px;
-            height:400px;
-            top:100px;
-            left:100px;
-            border-radius: 5px;
         }
         .head{
             padding:10px;
@@ -76,12 +74,13 @@
           text-decoration: none;
           color:pink;
       }
-       @media (max-width:500px){
+      @media (max-width:370px){
           .box{
-              left:50px;
-              margin:10px;
+              top:25%;
+              left:25%;
+              transform: translate(-25%,-25%);
           }
-      }
+      } 
     </style>
 </head>
 <body>
